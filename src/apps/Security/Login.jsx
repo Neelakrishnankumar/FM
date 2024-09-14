@@ -1,5 +1,5 @@
 import React, { useState,useEffect }  from 'react';
-import {Select, Avatar,Stack, Grid,Paper, FormLabel, TextField, Button, Autocomplete,Box,Link,IconButton,FormControl,InputLabel,OutlinedInput,InputAdornment,FormHelperText,FormGroup,MenuItem } from '@mui/material'
+import {Select, Avatar,Stack, Grid,Paper, FormLabel, TextField, Button, Typography, Autocomplete,Box,Link,IconButton,FormControl,InputLabel,OutlinedInput,InputAdornment,FormHelperText,FormGroup,MenuItem } from '@mui/material'
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon  from '@mui/icons-material/VisibilityOff';
 import { useNavigate } from "react-router-dom";
@@ -17,8 +17,9 @@ import store from '../../index';
 import { toast } from "react-hot-toast";
 import {  useParams } from "react-router-dom";
 import { Field, Form, Formik,ErrorMessage} from 'formik';
-import  background from '../../assets/img/OQECWT0.jpg'
+import  background from '../../assets/img/bexlogo.jpg'
 import { LoadingButton } from '@mui/lab';
+
 
 
 
@@ -201,7 +202,7 @@ const Login=()=>{
       
     >
 
-    <Stack  
+   {/*  <Stack  
        
         sx={{
         width: {sm:'100%',md:'100%',lg:'100%'},
@@ -218,6 +219,25 @@ const Login=()=>{
     >
       
     {/* <Avatar variant='rounded' src={LgemsLogo} sx={{width:'227px',height:'100px'}}></Avatar> */}
+     <Stack  
+       
+       sx={{
+       width: {sm:'80%',md:'80%',lg:'80%'},
+       alignContent:'center',
+       justifyContent:'flexend',
+       alignItems:'center',
+       backgroundImage: `url(${background})`, 
+       backgroundRepeat: 'no-repeat',  
+       backgroundPosition: 'center',
+       backgroundSize: '50%', 
+       padding:1,
+       borderRadius:'5px',
+       height: '350px',
+       flexDirection: 'column-reverse' 
+       
+   }}
+   >
+     <Typography variant='h6' sx={{  marginBottom:2,marginRight:2}}>Finance Management </Typography>
         </Stack>
       
 

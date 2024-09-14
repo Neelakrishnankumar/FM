@@ -37,9 +37,9 @@ html,
 } */ 
 
 .wrapper{
-  background-image: url(./assets/img/fmbackground.jpg);
+  background-image: url(./assets/img/fimg.jpg);
   background-size: cover;
-  opacity: 0.9;
+  opacity: 1.5;
   
  
 }
