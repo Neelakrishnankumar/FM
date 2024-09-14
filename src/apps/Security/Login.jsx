@@ -17,7 +17,7 @@ import store from '../../index';
 import { toast } from "react-hot-toast";
 import {  useParams } from "react-router-dom";
 import { Field, Form, Formik,ErrorMessage} from 'formik';
-import  background from '../../assets/img/background.jpg'
+import  background from '../../assets/img/OQECWT0.jpg'
 import { LoadingButton } from '@mui/lab';
 
 
@@ -184,15 +184,17 @@ const Login=()=>{
           <form onSubmit={handleSubmit}>
        <Stack
 
-      component="form"
+    
       height={{sm:'520px',md:'373px'}}
       width={{sm:'291px',md:'700px'}}
       sx={{
       boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px",
       borderRadius:'10px',
-      backgroundColor:'white',
+      backgroundColor:'#b7deb8',
       padding :'15px',
-      margin:"20px auto",}}
+      margin:"20px auto",
+      
+    }}
       spacing={{sm:4,md:2}}
       autoComplete="off"
       direction={{sm:'column',md:'row'}}
@@ -209,12 +211,13 @@ const Login=()=>{
         backgroundImage: `url(${background})`,
         backgroundSize:'cover',
         padding:1,
-        borderRadius:'5px'
+        borderRadius:'5px',
+        // backgroundColor:"#6573c3"
         
     }}
     >
       
-    <Avatar variant='rounded' src={LgemsLogo} sx={{width:'227px',height:'100px'}}></Avatar>
+    {/* <Avatar variant='rounded' src={LgemsLogo} sx={{width:'227px',height:'100px'}}></Avatar> */}
         </Stack>
       
 
